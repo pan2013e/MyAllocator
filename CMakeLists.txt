@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0)
+project(lab7 LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS "-O3 ${CMAKE_CXX_FLAGS}")
+add_executable(speedtest myAllocator.h speedtest.cpp)
+add_executable(correctness_test myAllocator.h testbench.cpp)
+add_executable(correctness_test2 myAllocator.h testbench2.cpp)
